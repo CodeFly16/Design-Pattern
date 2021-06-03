@@ -21,7 +21,7 @@ public class ReadXML {
             NodeList nl = doc.getElementsByTagName("className");
             Node classNode = nl.item(0).getFirstChild();
             String cName = "_04工厂方法模式." + classNode.getNodeValue();
-            //System.out.println("新类名："+cName);
+            System.out.println("新类名："+cName);
             //通过类名生成实例对象并将其返回
             Class<?> c = Class.forName(cName);
             Object obj = c.newInstance();
